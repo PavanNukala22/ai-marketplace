@@ -4,11 +4,12 @@ import Image from "next/image";
 export default function ProductCard({ product }) {
   return (
     <div className="bg-white rounded-xl shadow-md p-5 hover:shadow-xl transition">
-      <div className="relative h-48 mb-4">
+      <div className="relative h-48 w-full mb-4">
         <Image
           src={product.image}
           alt={product.name}
           fill
+          sizes="100vw"
           className="object-cover rounded-lg"
         />
       </div>
